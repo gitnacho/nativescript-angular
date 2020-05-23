@@ -11,13 +11,13 @@ https://docs.nativescript.org/setup/quick-setup
 # Prepare project
 
 ```sh
-$ npm install
+npm install
 ```
 
 # Add platforms(s)
 
 1. `tns platform add android`
-2. `tns platform add ios`
+1. `tns platform add ios`
 
 # Run
 

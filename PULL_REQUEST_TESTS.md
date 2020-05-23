@@ -1,12 +1,12 @@
-### Pull Requests Checks
+# Pull Requests Checks
 
 Builds distributed between Travis CI and internal Jenkins CI execute on pull requests. By default, Travis CI builds trigger on community pull requests and both Travis CI and Jenkins CI builds trigger on core team pull requests. Only NativeScript members have rights to trigger internal Jenkins CI builds. In long term, we aim to migrate all the builds in a public cloud environment.
 
-### Travis
+## Travis
 
 This builds the `nativescript-angular` package and the [tests](https://github.com/NativeScript/nativescript-angular/tree/master/tests) app for Android. Please, refer to the [.travis.yml](https://github.com/NativeScript/nativescript-angular/blob/master/.travis.yml) config file for complete information.
 
-### Jenkins
+## Jenkins
 
 More extensive tests execute in Jenkins CI. As it is an internal environment, these builds cannot be triggered from people outside the NativeScript organization. In order to trigger a build mannually, you need to comment inside the pull request. The table below describes the comment messages and the locations of the app/tests of all builds available to execute tests on pull requests.
 
