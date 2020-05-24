@@ -2,7 +2,7 @@
     <Label text="Modal"></Label>
 </ActionBar>
 
-<GridLayout #rootLayout rows="*, auto" (showingModally)="onShowingModally($event)"> 
+<GridLayout #rootLayout rows="*, auto" (showingModally)="onShowingModally($event)">
     <StackLayout backgroundColor="lightGreen">
         <Button text="Navigate To Second Page" (tap)="onNavigateSecondPage()" [visibility]="navigationVisibility"></Button>
         <Button text="Show Nested Modal Page With Frame" (tap)="showNestedModalFrame()" [visibility]="navigationVisibility"></Button>

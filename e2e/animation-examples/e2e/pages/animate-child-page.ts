@@ -5,7 +5,7 @@ import { BasePage } from "./base-page";
 export class AnimateChildPage extends BasePage {
     private _parent: UIElement;
     private _child: UIElement;
-    
+
     constructor(_driver: AppiumDriver) {
         super(_driver)
     }

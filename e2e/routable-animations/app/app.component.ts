@@ -44,8 +44,6 @@ const slideRight = [
 })
 export class AppComponent {
     prepRouteState(outlet: any) {
-        return outlet.activatedRouteData['animation'] || 'firstPage'; 
+        return outlet.activatedRouteData['animation'] || 'firstPage';
     }
 }
-
-

@@ -12,12 +12,12 @@ import { FirstComponent, SecondComponent } from "./navigation-common";
     template: `
         <StackLayout>
             <StackLayout class="nav">
-                <Button text="First" 
+                <Button text="First"
                     [nsRouterLink]="['/first']"></Button>
                 <Button text="Second"
                     [nsRouterLink]="['/second']"></Button>
             </StackLayout>
-            
+
             <router-outlet></router-outlet>
         </StackLayout>
     `

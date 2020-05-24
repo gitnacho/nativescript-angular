@@ -46,11 +46,10 @@ export class TabItemBindingComponent {
     onIndexChange(args): void {
         const selectedIndex = args.object.selectedIndex;
 
-        for (let i = 0; i < this.items.length; i++) { 
+        for (let i = 0; i < this.items.length; i++) {
             this.items[i] = notSelected;
         }
 
         this.items[selectedIndex] = selected;
     }
 }
-

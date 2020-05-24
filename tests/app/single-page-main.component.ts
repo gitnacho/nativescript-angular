@@ -17,7 +17,7 @@ import {SecondComponent} from "./second.component";
     </Frame>
     `
 })
-export class SinglePageMain { 
+export class SinglePageMain {
     constructor(
         public elementRef: ElementRef,
         public router: Router,

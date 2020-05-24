@@ -11,7 +11,7 @@ export const COMPONENTS = [PlayerComponent, PlayerDetailComponent, TeamsComponen
 
 const routes: Routes = [
     { path: "", redirectTo: "/(playerTab:players//teamTab:teams)", pathMatch: "full" },
-    
+
     { path: "players", component: PlayerComponent, outlet: "playerTab"  },
     { path: "player/:id", component: PlayerDetailComponent, outlet: "playerTab"  },
 

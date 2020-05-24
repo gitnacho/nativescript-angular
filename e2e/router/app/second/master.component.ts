@@ -5,7 +5,7 @@ import { Page } from "tns-core-modules/ui/page";
     template: `
     <GridLayout rows="auto, auto">
         <Label text="NestedMaster" class="nested-header"></Label>
-                
+
         <StackLayout row="1" orientation="horizontal">
             <Button *ngFor="let detail of details" [text]="'DETAIL ' + detail" [nsRouterLink]="['detail', detail]"></Button>
         </StackLayout>

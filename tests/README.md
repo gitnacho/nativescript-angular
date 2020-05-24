@@ -6,11 +6,11 @@ This is a template project using NativeScript and AngularJS 2
 
 Install your native toolchain and NativeScript as described in the docs:
 
-https://docs.nativescript.org/setup/quick-setup
+<https://docs.nativescript.org/setup/quick-setup>
 
 # Prepare project
 
-```sh
+``` Shell
 npm install
 ```
 
@@ -23,12 +23,12 @@ npm install
 
 Android devices or emulators:
 
-```sh
+``` Shell
 tns run android
 ```
 
 or iOS...
 
-```sh
+``` Shell
 tns run ios
 ```

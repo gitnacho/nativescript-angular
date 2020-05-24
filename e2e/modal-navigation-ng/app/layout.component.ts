@@ -45,5 +45,5 @@ export class LayoutComponent {
     this.modal.showModal(ModalViewComponent, options).then((result: string) => {
         console.log(result);
     });
-    } 
+    }
 }

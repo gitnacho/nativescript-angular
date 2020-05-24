@@ -38,10 +38,10 @@ import { Component } from "@angular/core";
                 [@listAnimation]="items.length"
                 *ngFor="let item of items; let i=index">
 
-                <FlexboxLayout justifyContent="center" alignItems="center"> 
+                <FlexboxLayout justifyContent="center" alignItems="center">
                     <Label [text]="'Item No.' + i"></Label>
                     <Button [text]="item" (tap)="remove(item)"></Button>
-                </FlexboxLayout> 
+                </FlexboxLayout>
 
             </FlexboxLayout>
 

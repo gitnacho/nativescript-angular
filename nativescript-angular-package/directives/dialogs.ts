@@ -1,1 +1,1 @@
-export * from "@nativescript/angular/directives/dialogs"; 
+export * from "@nativescript/angular/directives/dialogs";

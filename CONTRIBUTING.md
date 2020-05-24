@@ -105,13 +105,13 @@ In this case the commits should be merge firstly from release in master branch a
 
 1. Execute [`npm version`](https://docs.npmjs.com/cli/version) to bump the version in both `nativescript-angular` and `nativescript-angular-package` folders:
 
-   ``` Node
+   ``` Shell
    npm --no-git-tag-version version [patch|minor|major] -m    "release: cut the %s release"
    ```
 
 or
 
-   ``` Node
+   ``` Shell
    npm --no-git-tag-version version [version]    --allow-same-version -m "release: cut the %s release"
    ```
 

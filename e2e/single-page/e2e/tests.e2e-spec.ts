@@ -34,7 +34,7 @@ describe("Single page app", async function () {
             await driver.logTestArtifacts(this.currentTest.title);
         }
     });
-    
+
     it("should load first page", async function () {
         await driver.findElementByAutomationText("First Component");
 

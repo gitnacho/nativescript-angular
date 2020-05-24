@@ -9,7 +9,7 @@ import { map } from "rxjs/operators";
     template: `
     <StackLayout>
         <Label text="NestedDetail" class="nested-header"></Label>
-            
+
         <Label [text]="'nested-param: ' + (id$ | async)"></Label>
     </StackLayout>
     `

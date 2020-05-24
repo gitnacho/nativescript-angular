@@ -94,7 +94,7 @@ export class TestDefaultItemTemplateComponent {
         }
     }
     @ViewChild("listView", { static: false }) listViewElement: ListViewComponent;
-    onScrollListViewTo() { 
+    onScrollListViewTo() {
         this.listViewElement.nativeElement.scrollToIndex(100);
     }
 }

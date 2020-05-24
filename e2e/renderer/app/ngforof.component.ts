@@ -6,7 +6,7 @@ import { ItemsAccessor } from "./items-accessor";
 @Component({
     template: `
         <ActionBar title="ngForOf"></ActionBar>
-        <Stacklayout> 
+        <Stacklayout>
             <ng-template ngFor let-item [ngForOf]="items">
                 <Label [text]="'label: ' + item"></Label>
                 <Button (tap)="remove(item)" [text]="item"></Button>
@@ -22,4 +22,3 @@ export class NgForOfComponent extends ItemsAccessor {
         super(itemsService);
     }
 }
-

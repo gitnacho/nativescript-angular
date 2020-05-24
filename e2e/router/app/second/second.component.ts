@@ -22,7 +22,7 @@ import { CounterService } from "../counter.service";
             <Button text="BACK" automationText="BACK" (tap)="goBack()"></Button>
             <Button text="TICK" automationText="TICK" (tap)="service.tick()"></Button>
         </WrapLayout>
-        
+
         <GridLayout row="1" rows="*,*">
             <GridLayout row="0" class="nested-outlet">
                 <router-outlet></router-outlet>

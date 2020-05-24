@@ -54,7 +54,7 @@ npm install
 
 Start the app:
 
-``` Node
+``` Shell
 tns run android
 tns run ios
 ```

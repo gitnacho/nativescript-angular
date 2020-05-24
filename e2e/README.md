@@ -24,7 +24,7 @@ All projects use the same [appium capabilities files](config/appium.capabilities
 
 Make sure you build or run the project with the NativeScript CLI first:
 
-``` Node
+``` Shell
 tns build android
 tns run ios
 ```
@@ -33,7 +33,7 @@ Run appium tests with the `e2e` npm task. Check ns-dev-appium options [here](htt
 
 Examples:
 
-``` Node
+``` Shell
 npm run e2e -- --runType android23
 
 npm run e2e -- --runType sim.iPhone8.iOS112
@@ -43,7 +43,7 @@ For **development** you can use `--devMode` flag to reuse the current emulator a
 
 Examples:
 
-``` Node
+``` Shell
 npm run e2e -- --runType android23 --devMode
 
 npm run e2e -- --runType sim.iPhone8.iOS112 --devMode

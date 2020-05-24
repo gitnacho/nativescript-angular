@@ -11,9 +11,8 @@ import { Component } from "@angular/core";
                 <Button text="SECOND(2)" nsRouterLinkActive="active" [nsRouterLink]="['/second', '2' ]">
                 </Button>
             </FlexboxLayout>
-            
+
         </GridLayout>
     `
 })
 export class AppComponent { }
-

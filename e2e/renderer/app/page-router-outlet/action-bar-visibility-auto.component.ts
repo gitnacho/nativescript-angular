@@ -6,7 +6,7 @@ import { ActivatedRoute } from "@angular/router";
   template: `
     <ActionBar title="Action Bar Visibility Auto">
     </ActionBar>
-    
+
     <GridLayout rows="200, *" backgroundColor="salmon">
         <GridLayout row="1">
             <page-router-outlet name="nested" actionBarVisibility="auto"></page-router-outlet>

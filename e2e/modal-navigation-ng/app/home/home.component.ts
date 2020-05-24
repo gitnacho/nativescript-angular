@@ -26,7 +26,7 @@ export class HomeComponent {
     private routerExtension: RouterExtensions) {
       this.pageService.inPage$.subscribe((inPage) => console.log("HomeComponent - inPage", inPage));
     }
-  
+
   onNavigateSecond() {
       this.routerExtension.navigate(["second"]);
   }

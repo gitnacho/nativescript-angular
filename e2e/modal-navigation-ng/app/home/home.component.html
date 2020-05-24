@@ -6,7 +6,7 @@
     <root-section row="0" col="0" ></root-section>
     <StackLayout id="home-page" row="0" col="1" borderColor="blue" borderWidth="1" borderRadius="5" marginLeft="2"
         padding="2">
-        <basic-nav></basic-nav> 
+        <basic-nav></basic-nav>
         <Button text="Navigate To Second Page" (tap)="onNavigateSecond()" textAlignment="left"></Button>
         <Button text="Navigate To Second Page Named Outlet" (tap)="onNavigateSecondWithOutlet()" textAlignment="left"></Button>
         <Button text="Go To Second (to open shared modal)" [nsRouterLink]="['/modal-shared-second-host']" textAlignment="left"></Button>

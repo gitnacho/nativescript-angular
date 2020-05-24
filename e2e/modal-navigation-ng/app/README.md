@@ -4,13 +4,13 @@ This template creates a "Hello, world" NativeScript app using TypeScript and Ang
 
 You can create a new app that uses this template with either the `--template` option.
 
-``` Node
+``` Shell
 tns create my-app-name --template tns-template-hello-world-ng
 ```
 
 Or the `--ng` shorthand.
 
-``` Node
+``` Shell
 tns create my-app-name --ng
 ```
 
@@ -18,7 +18,7 @@ tns create my-app-name --ng
 
 If you want to create a new app that uses the source of the template from the `master` branch, you can execute the following:
 
-``` Node
+``` Shell
 tns create my-app-name --template https://github.com/NativeScript/template-hello-world-ng.git#master
 ```
 

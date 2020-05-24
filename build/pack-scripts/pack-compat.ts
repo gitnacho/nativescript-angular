@@ -30,7 +30,7 @@ function prepareCompatPackageJSON(scopedVersion: string) {
 }
 
 if (scopedVersion === "auto-version") {
-    // We use this when build for release. In this case we need to get version from scoped package (nativescript-angular) 
+    // We use this when build for release. In this case we need to get version from scoped package (nativescript-angular)
     // and use it in the compat package.
 
     scopedVersion = JSON.parse(fs.readFileSync(nsAngularScopedPackageJSONPath, { encoding: "utf8" })).version;
@@ -39,17 +39,17 @@ if (scopedVersion === "auto-version") {
     let npmInstallParams = "";
 
     if (scopedVersion.indexOf(".tgz") > 0) {
-        // If building with .tgz, we need to update the package.json of the compat package 
+        // If building with .tgz, we need to update the package.json of the compat package
         prepareCompatPackageJSON(scopedVersion)
     } else {
         // If building with tag or exact version, just install it with --save-exact
         npmInstallParams = `@nativescript/angular@${scopedVersion}`;
-    }  
+    }
 
     execSync(`npm install --save-exact ${npmInstallParams}`, {
         cwd: nsAngularPackagePath
     });
-} 
+}
 
 // ensure empty temp and existing dist folders
 fs.emptyDirSync(tempFolderPath);

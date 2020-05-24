@@ -3,7 +3,7 @@ import { Page } from "tns-core-modules/ui/page";
 @Component({
     selector: "master",
     template: `
-    <GridLayout rows="auto">   
+    <GridLayout rows="auto">
         <StackLayout row="1" orientation="horizontal">
             <Button *ngFor="let detail of details" [text]="'DETAIL-NAMED ' + detail" [nsRouterLink]="['detail', detail]"></Button>
         </StackLayout>

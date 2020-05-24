@@ -8,12 +8,11 @@ label {
     text-align: center;
 }
 
-.tab-view-container { 
+.tab-view-container {
     font-family: 'Courier'; /* Enabling this results in the error and shows a blank TabView */
 }
 
 .btnIcon {
     font-family: 'FontAwesome';
-    font-size: 30 
+    font-size: 30
 }
-

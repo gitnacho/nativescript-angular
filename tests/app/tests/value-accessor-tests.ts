@@ -82,7 +82,7 @@ describe("two-way binding via ng-model", () => {
 
         accessor.writeValue("blah");
         assert.notEqual(accessor.view.value, accessor.view.value, "defaults to NaN on parse errors");
-        
+
         accessor.writeValue(null);
         assert.strictEqual(defaultValue, accessor.view.value, "setting null should reset the value");
     });
@@ -106,14 +106,14 @@ describe("two-way binding via ng-model", () => {
     it("converts strings to dates", () => {
         const accessor = new TestDateValueAccessor();
         const defaultDate = accessor.view.date; // current date time
-        
+
         assert.instanceOf(accessor.view.date, Date);
         let diff = Math.abs(accessor.view.date.getTime() - defaultDate.getTime());
         assert.isTrue(diff < 1000, "setting null should reset the value");
 
         accessor.writeValue("2010/03/17");
         assert.equal(formatDate(new Date(2010, 2, 17)), formatDate(accessor.view.date));
-        
+
         accessor.writeValue(null);
         assert.instanceOf(accessor.view.date, Date);
         diff = Math.abs(accessor.view.date.getTime() - defaultDate.getTime());
@@ -123,7 +123,7 @@ describe("two-way binding via ng-model", () => {
     it("converts strings to int selection", () => {
         const accessor = new TestSelectedIndexValueAccessor();
         const defaultValue = accessor.view.selectedIndex;
-        
+
         accessor.writeValue(null);
         accessor.ngAfterViewInit();
         assert.strictEqual(defaultValue, accessor.view.selectedIndex, "setting null should keep the default value");

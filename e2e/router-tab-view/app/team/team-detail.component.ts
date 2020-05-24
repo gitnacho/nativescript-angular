@@ -11,7 +11,7 @@ import { Subscription } from "rxjs";
 })
 export class TeamDetailComponent implements OnInit {
     item: DataItem;
-    subscription: Subscription;    
+    subscription: Subscription;
 
     constructor(
         private data: DataService,

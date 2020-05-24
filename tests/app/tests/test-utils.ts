@@ -18,7 +18,7 @@ export function dumpView(view: View, verbose: boolean = false): string {
         nodeName = view.toString().replace(/(@[^;]*;)/g, '');
     }
     nodeName = nodeName.toLocaleLowerCase();
-    
+
     let output = ["(", nodeName];
     if (verbose) {
         if (view instanceof TextBase) {
@@ -48,4 +48,3 @@ export function createDevice(os: string): Device {
         model: "test device"
     };
 }
-

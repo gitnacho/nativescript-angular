@@ -21,14 +21,14 @@ import {
 
             <Button
                 *ngFor="let hero of heroes"
-                [text]="hero" 
+                [text]="hero"
                 [@flyInOut]="'in'"
                 (tap)="flyOut(hero)"
                 backgroundColor="hotpink"
                 [automationText]="hero"
                 height="75"
             ></Button>
- 
+
         </StackLayout>
     `,
     styles: [
