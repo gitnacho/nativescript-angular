@@ -309,9 +309,7 @@ import { ElementRef } from "@angular/core";
 
 **BREAKING CHANGES**:
 
-* The `document` object is no longer property of the `global` object. This
-may cause behavioral changes in some plugin that use the `document`
-object to determine if they're running in browser context.
+* The `document` object is no longer property of the `global` object. This may cause behavioral changes in some plugin that use the `document` object to determine if they're running in browser context.
 
 Fixes <https://github.com/NativeScript/nativescript-angular/issues/1144>.
 
@@ -594,12 +592,9 @@ class AppModule { }
 
 **BREAKING CHANGES**:
 
-* `NativeScriptModule` should be imported only in the root application
-module (usually named `AppModule`).
-All other NgModules in the app (both feature and lazy-loaded ones)
-should import the `NativeScriptCommonModule` instead.
-The behavior is aligned with `BrowserModule` and `CommonModule` in web
-Angular apps described in [this](https://angular.io/guide/ngmodule-faq#q-browser-vs-common-module) guide.
+* `NativeScriptModule` should be imported only in the root application module (usually named `AppModule`).
+All other NgModules in the app (both feature and lazy-loaded ones) should import the `NativeScriptCommonModule` instead.
+The behavior is aligned with `BrowserModule` and `CommonModule` in web Angular apps described in [this](https://angular.io/guide/ngmodule-faq#q-browser-vs-common-module) guide.
 
 Migration steps:
 In all NgModules, except the root one (`AppModule`), replace:
@@ -703,11 +698,9 @@ import { NativeScriptCommonModule } from "nativescript-angular/common";
 
 **BREAKING CHANGES**:
 
-* **animations:** To use animations, you need to import the
-NativeScriptAnimationsModule from "nativescript-angular/animations" in
-your root NgModule.
-* User applications cannot import NativeScriptModule from
-"nativescript-angular/platform" anymore.
+* **animations:** To use animations, you need to import the NativeScriptAnimationsModule from "nativescript-angular/animations" in your root NgModule.
+* User applications cannot import NativeScriptModule from "nativescript-angular/platform" anymore.
+
 Migration:
 
 Before:
@@ -776,9 +769,7 @@ import { NativeScriptModule } from
 
 **BREAKING CHANGES**:
 
-* **NativeScriptModule:** User applications cannot import NativeScriptModule from
-"nativescript-angular/platform" anymore.
-Migration:
+* **NativeScriptModule:** User applications cannot import NativeScriptModule from "nativescript-angular/platform" anymore. Migration:
 
 Before:
 
@@ -793,9 +784,7 @@ import { NativeScriptModule } from
 "nativescript-angular/nativescript.module";
 ```
 
-* **animations:** To use animations, you need to import the
-NativeScriptAnimationsModule from "nativescript-angular/animations" in
-your root NgModule. Also you need a dependency to "@angular/animations".
+* **animations:** To use animations, you need to import the NativeScriptAnimationsModule from "nativescript-angular/animations" in your root NgModule. Also you need a dependency to "@angular/animations".
 
 * **typescript:** The required version of TypeScript is ~2.1. Support for ~2.2 requires changes in `tns-core-modules` and will be provided with NativeScript 3.0.
 

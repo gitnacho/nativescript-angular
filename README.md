@@ -6,16 +6,12 @@ This repository contains the code for integration of NativeScript with Angular.
 
 [NativeScript](https://www.nativescript.org/) is a framework which enables developers to write truly native mobile applications for Android and iOS using JavaScript and CSS. [Angular](https://angular.io/) is one of the most popular open source JavaScript frameworks for application development. We [worked closely with developers at Google](http://angularjs.blogspot.bg/2015/12/building-mobile-apps-with-angular-2-and.html) to make Angular in NativeScript a reality. The result is a software architecture that allows you to build mobile apps using the same framework—and in some cases the same code—that you use to build Angular web apps, with the performance you’d expect from native code. [Read more about building truly native mobile apps with NativeScript and Angular](https://docs.nativescript.org/tutorial/ng-chapter-0).
 
-<!-- TOC depthFrom:2 -->
-
 * [NativeScript Angular](#nativescript-angular)
   + [Watch the video explaining Angular and NativeScript](#watch-the-video-explaining-angular-and-nativescript)
   + [Explore the examples](#explore-the-examples)
   + [Contribute](#contribute)
   + [Known issues](#known-issues)
   + [Get Help](#get-help)
-
-<!-- /TOC -->
 
 ## Watch the video explaining Angular and NativeScript
 

@@ -1,7 +1,5 @@
 # Development Workflow
 
-<!-- TOC depthFrom:2 -->
-
 * [Development Workflow](#development-workflow)
   + [Running locally](#running-locally)
     - [Prerequisites](#prerequisites)
@@ -11,8 +9,6 @@
     - [Run some of the e2e applications e.g. router-tab-view](#run-some-of-the-e2e-applications-eg-router-tab-view)
   + [Running the tests](#running-the-tests)
   + [Testing locally by running e2e tests](#testing-locally-by-running-e2e-tests)
-
-<!-- /TOC -->
 
 ## Running locally
 
